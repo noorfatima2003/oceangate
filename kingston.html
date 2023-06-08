@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Ocean Gate</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- ------top navbar--------- -->
+        <div class="container-fluid d-sm-none d-lg-block shadow small top-nav">
+            <nav class="navbar navbar-expand-md d-flex justify-content-around">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="about.html" class="nav-link">About OceanGate</a></li>
+                    <li class="nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="ret&exchange.html" class="nav-link">Return & Exchange</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="login.html" class="nav-link">My Account</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Create Account</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!-- -------Header start------- -->
+        <nav class="container navbar navbar-expand-md d-flex justify-content-between">
+            <div>
+                <a href="index.html" class="navbar-brand"><span class="logo">OCEAN </span>GATE</a>
+            </div>
+
+            <div class="input-div ps-1 d-flex justify-content-between">
+                <input type="text" placeholder="Search">
+                <i class="bi bi-search px-2 py-1"></i>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <!-- <i class="bi bi-person-fill p-2"></i> -->
+                <select id="select">
+                    <option value="PAK">PAK</option>
+                    <option value="USA">USA</option>
+                    <option value="EU">EU</option>
+                    <option value="GULF">GULF</option>
+                </select>
+                <button onclick="change()" style="background-color: #02add8; border: none;">Change Region</button>
+                <i class="bi bi-cart-dash-fill p-2"></i>
+            </div>
+        </nav>
+        <!-- -------header end--------- -->
+
+        <!-- ------ navbar------ -->
+        <nav class="navbar navbar-expand-md px-5 main-nav">
+            <div class="container sticky-top">
+                
+            <button class="navbar-toggler" type="button" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse text-center d-md-flex justify-content-between" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link" role="button" data-bs-toggle="dropdown">Products <span class="dropdown-toggle"></span></a>
+                        <ul class="dropdown-menu text-center">
+                            <li class="dropdown-item"><a href="Hard-drive.html">Hard Drive</li>
+                            <li class="dropdown-item"><a href="SSD.html">SSDs</li>
+                            <li class="dropdown-item"><a href="Floppy-disk.html">Floppy Disk</li>
+                            <li class="dropdown-item"><a href="Ram.html">RAM</li>
+                            <li class="dropdown-item"><a href="usb.html">USB Flash Memory</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Hard Drives</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SSDs</a></li>
+                </ul>
+                <div class="s-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook mx-2"
+                            title="facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram mx-2"
+                            title="instagram"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp mx-2"
+                            title="whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <!-- --------navbar end-------- -->
+
+
+        <!-- -------sidebar collpase start-------- -->
+        <div class="side-bar d-lg-none" id="sideBar">
+            <aside class="list pe-4 shadow pe-5 ps-3">
+                <!-- ---------Brand selection start-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#brandCollapse">
+                    <span class="dropdown-toggle">Brands</span>
+                </button>
+                <hr>
+                <div id="brandCollapse" class="collapse show">
+                    <p><a href="samsung.html">Samsung</a></p>
+                    <p><a href="apple.html">Apple</a></p>
+                    <p><a href="sandisk.html">San disk</a></p>
+                    <p><a href="kingston.html">Kingston</a></p>
+                </div>
+                <!-- ---------Brand selection end-------- -->
+                <!-- ---------Price range selection start-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#priceCollapse">
+                    <span class="dropdown-toggle">Price range</span>
+                </button>
+                <hr>
+                <div id="priceCollapse" class="collapse show">
+                    <p><a href="price1000-3400.html">Rs. 1000 - 3400</a></p>
+                    <p><a href="#">Rs. 3500 - 7000</a></p>
+                    <p><a href="#">Rs. 7000 - 9000</a></p>
+                    <p><a href="#">Rs. 9000 - 12500</a></p>
+                </div>
+                <!-- ---------Price range selection end-------- -->
+                <!-- ---------Color selection Start-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#colorCollapse">
+                    <span class="dropdown-toggle">Color</span>
+                </button>
+                <hr>
+                <div id="colorCollapse" class="collapse show">
+                    <p><a href="#">Black </a><small class="bg-dark text-dark px-1 ms-2">a</small></p>
+                    <p><a href="#">Red</a><small class="bg-danger text-danger px-1 ms-2">a</small></p>
+                    <p><a href="#">Green</a><small class="bg-success text-success px-1 ms-2">a</small></p>
+                </div>
+                <!-- ---------Color selection end-------- -->
+                <!-- ---------Size selection end-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#sizeCollapse">
+                    <span class="dropdown-toggle">Size</span>
+                </button>
+                <div id="sizeCollapse" class="collapse show">
+                    <p><a href="32gb.html">32GB </a></p>
+                    <p><a href="#">64Gb</a></p>
+                    <p><a href="#">128GB</a></p>
+                    <p><a href="#">256GB</a></p>
+                </div>
+            </aside>
+            <div>
+                <button class="btn btn-close filter-btn-close"  onclick="filterBarClose()"></button>
+            </div>
+        </div>
+         <!-- -------button to display the filter bar on small screen------- -->
+         <div class="filter-button d-md-block d-lg-none">
+            <i class="bi bi-filter-square-fill" title="filter" onclick="filterBtn()"></i>
+        </div>
+        <!-- -------sidebar collpase end-------- -->
+
+        <!-- ------section 1 Start------ -->
+        <section class=" container d-flex">
+
+            <!-- -------Filter bar start------- -->
+            <aside class="list pe-4 shadow h-75 pe-5 ps-3 d-lg-block filter-bar">
+                <!-- ---------Brand selection start-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#brandCollapse">
+                    <span class="dropdown-toggle">Brands</span>
+                </button>
+                <hr>
+                <div id="brandCollapse" class="collapse show">
+                    <p><a href="samsung.html">Samsung</a></p>
+                    <p><a href="apple.html">Apple</a></p>
+                    <p><a href="sandisk.html">San disk</a></p>
+                    <p><a href="kingston.html">Kingston</a></p>
+                </div>
+                <!-- ---------Brand selection end-------- -->
+                <!-- ---------Price range selection start-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#priceCollapse">
+                    <span class="dropdown-toggle">Price range</span>
+                </button>
+                <hr>
+                <div id="priceCollapse" class="collapse show">
+                    <p><a href="price1000-3400.html">Rs. 1000 - 3400</a></p>
+                    <p><a href="#">Rs. 3500 - 7000</a></p>
+                    <p><a href="#">Rs. 7000 - 9000</a></p>
+                    <p><a href="#">Rs. 9000 - 12500</a></p>
+                </div>
+                <!-- ---------Price range selection end-------- -->
+                <!-- ---------Color selection Start-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#colorCollapse">
+                    <span class="dropdown-toggle">Color</span>
+                </button>
+                <hr>
+                <div id="colorCollapse" class="collapse show">
+                    <p><a href="#">Black </a><small class="bg-dark text-dark px-1 ms-2">a</small></p>
+                    <p><a href="#">Red</a><small class="bg-danger text-danger px-1 ms-2">a</small></p>
+                    <p><a href="#">Green</a><small class="bg-success text-success px-1 ms-2">a</small></p>
+                </div>
+                <!-- ---------Color selection end-------- -->
+                <!-- ---------Size selection end-------- -->
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#sizeCollapse">
+                    <span class="dropdown-toggle">Size</span>
+                </button>
+                <div id="sizeCollapse" class="collapse show">
+                    <p><a href="32gb.html">32GB </a></p>
+                    <p><a href="#">64Gb</a></p>
+                    <p><a href="#">128GB</a></p>
+                    <p><a href="#">256GB</a></p>
+                </div>
+            </aside>
+           
+
+            <!-- --------product row start-------- -->
+            <div class="row m-5">
+                <div class="col-md-12">
+                    <h3>Storage Devices</h3>
+                    <p>Buy SSD, USB Flash Drives and HDD Hard Drives at the best price in pakistan from OceanGate.com.
+                        We only sell original, brand new unused components in all over the world with delivery. Shop
+                        without worrying about product quality and customer service from OceanGate. The best online
+                        computer store for PC building and upgrading.
+                    </p>
+                </div>
+                <!-- ------product col start------- -->
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/ssd1.jpg">
+                    <p class="product-info mt-4">Kingston SSD plastic body 64GB <br>vs. 2022</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">5000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="kingstonUSB.html"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/usb2.jpg">
+                    <p class="product-info mt-4">Kingston 700 USB 3.1 USB Dirve <br> 32GB</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">3500</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/hard drive1.jpg">
+                    <p class="product-info mt-4">Kingston Hard Drive 700 64Gb 2021 vs. <br> Dirve</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">2400</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/ram1.png">
+                    <p class="product-info mt-4">Kingston RAM <br>Jet Black <br>32GB</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">2500</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <!-- ----second row start------ -->
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/dvd 1.jpg">
+                    <p class="product-info mt-4">Kingston Floppy Disk <br> 128GB <br> vs.2019 </p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">3000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i> </p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/usb4.jpg">
+                    <p class="product-info mt-4">Kingston JetFlash 700 USB 3.1 USB Flash <br> Dirve</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">6000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/hard drive3.jpeg">
+                    <p class="product-info mt-4">Kingston Disk Hard Drive 32Gb 2022 vs. <br> Dirve</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">6500</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/hard drive4.png">
+                    <p class="product-info mt-4">Kingston Hard Drive 700 256Gb 2023 vs. <br> Dirve</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">4500</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <!-- second row end------- -->
+                <!-- third row start------- -->
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/ssd1.jpg">
+                    <p class="product-info mt-4">Kingston SSD plastic body 64GB <br>vs. 2022</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">9000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i> </p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/ssd2.jpeg">
+                    <p class="product-info mt-4">Kingston SSD Black body 128GB <br>vs. 2020</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">10000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/ssd3.jpg">
+                    <p class="product-info mt-4">Kingston SSD plastic body 64GB <br>vs. 2021</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">12000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/ssd4.jpg">
+                    <p class="product-info mt-4">Kingston SSD Green color 32GB <br>vs. 2023</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">1000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <!-- third row end------- -->
+                <!-- fourth row start------- -->
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/dvd 1.jpg">
+                    <p class="product-info mt-4">Kingston Floppy Disk <br> 128GB <br> vs.2019 </p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">4000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i> </p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/dvd 2.jpg">
+                    <p class="product-info mt-4">Kingston Floppy Disk <br> 128GB <br> vs.2018</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">2000</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/dvd 3.jpg">
+                    <p class="product-info mt-4">Kingston Floppy Disk <br> 128GB <br> vs.2020</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">1300</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <div class="col-md-4 col-lg-3 col-sm-6 p-3 product">
+                    <img src="images/dvd 1.jpg">
+                    <p class="product-info mt-4">Kingston Floppy Disk <br> 128GB <br> vs.2019</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h6 class="price"><span class="rupee">Rs. </span><span class="my-price">1200</span></h6>
+                        <i class="bi bi-cart-plus rounded-5 p-1 px-2"></i>
+                    </div>
+                   <a href="#"><p class="text-center mt-3">Quick View <i class="bi bi-arrow-right"></i></p></a> 
+                </div>
+                <!-- fourth row end------- -->
+
+            </div> <!----row div end------->
+
+        </section>
+        <!-- ------product section end------ -->
+
+      
+     <!-- --------footer start------- -->
+     <footer class="footer">
+        <div class="container-fluid bg-black">
+            <div class="container bg-black">
+                <div class="row">
+                    <div class="col-md-6  py-3 text-light"><h4>Sign Up for news letter <i class="bi bi-envelope-slash"></i></h4>
+                    </div>
+                    <div class="col-md-6  py-3 text-light">
+                        <input type="text" class="w-75 rounded-5 py-1 ps-2" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+            
+            <div class="row">
+                
+                <div class="col-md-3 col-sm-12">
+                    <h6>call us on</h6> 
+                    <p>03245678764</p>
+                    <h6>Contact info</h6>
+                    <p>Random adress</p>
+                    <h6>Email</h6>
+                    <p>support@oceangate.com</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h6>Company</h6>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="FAQs.html">FAQs</a></p>
+                    <p><a href="ret&exchange.html">Return & Exchange</a></p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h6>CATEGORIES</h6>
+                    <p><a href="Ram.html">Ram</a></p>
+                    <p> <a href="SSD.html">SSDs</a></p>
+                    <p> <a href="Hard-drive.html">Hard Drives</a></p>
+                    <p> <a href="usb.html">USB</a></p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h6>SOCIAL LINKS</h6>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook ps-1"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram ps-2"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp ps-2"></i></a>
+                    <p class="mt-3"><a href="login.html">Login</a></p>
+                    <p><a href="createAcc.html">Create Account</a></p>
+                    <p><a href="login.html">My Account</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-1">
+            <div class="container bg-black text-center text-light mt-3">
+                <p>copy rights claimed by oceangate 2023 <span class="border border-1 rounded-5 px-2">c</span></p>
+            </div>
+        </div>
+    </footer>
+    </div> <!-------main-container div end--------->
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+function filterBtn() {
+    var sideBar = document.getElementById('sideBar');
+    sideBar.style.marginLeft = "0px"
+}
+
+function filterBarClose() {
+        sideBar.style.marginLeft = "-250px"
+}
+    </script>
+</body>
+
+</html>
